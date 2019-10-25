@@ -104,12 +104,25 @@ header nav div ul li {
   font-size: 1.3vw;
 }
 
+.navbar .dropdown-menu.login-form {
+  width: 280px;
+  padding: 20px;
+  left: auto;
+  right: 0;
+}
+
 /* MEDIA QUERIES HEADER*/
 @media (max-width: 767.98px) { 
   header nav div ul li {
     font-size: 1rem;
   }
+
+  .navbar .dropdown-menu.login-form {
+    width: 100%;
+    padding: 10px 15px;
+  }
 }
+
 
 /* Footer */
 
