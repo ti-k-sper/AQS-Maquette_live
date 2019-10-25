@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Allier Qualité Santé - Contactez-nous</title>
+        <title>Allier Qualité Santé - Inscription</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lumen/bootstrap.min.css" rel="stylesheet" integrity="sha384-iqcNtN3rj6Y1HX/R0a3zu3ngmbdwEa9qQGHdkXwSRoiE+Gj71p0UNDSm99LcXiXV" crossorigin="anonymous">
@@ -79,53 +79,30 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="section-home-title mb-5">Contactez-nous</h1>
+                        <h1 class="section-home-title mb-5">Inscription sur notre site</h1>
                         <form id='contactForm' method="post" action="" class="container">
                             <div class="row">
                                 <div class="form-group col-12 col-sm">
                                     <label for="from">Votre adresse mail :</label>
-                                    <input required class="form-control" type="text" name="from" id="from"
-                                        placeholder="Votre adresse mail" />
+                                    <input required class="form-control" type="email" name="mail" placeholder="Votre adresse mail" />
                                 </div>
                                 <div class="form-group col-12 col-sm">
-                                    <label for="object">Objet de votre demande :</label>
-                                    <select required class="form-control" name="object" id="object">
-                                        <option value="">-- Choississez dans la liste : --</option>
-                                        <optgroup label="Renseignement sur une formation dans le domaine 'Démarche qualité-risque':">
-                                            <option value="training_1">S’initier à la démarche qualité en établissement médico-social (EHPAD – SSIAD – SAAD)</option>
-                                            <option value="training_2">Méthodologie des évaluations des pratiques professionnelles (EPP) en EHPAD</option>
-                                            <option value="training_3">La gestion documentaire en établissement médico-social</option>
-                                            <option value="training_4">Les indicateurs qualité en secteur médico-social (EHPAD – SSIAD)</option>
-                                            <option value="training_5">La gestion des risques en établissement médico-social : évaluation a priori – a posteriori</option>
-                                            <option value="training_6">Réaliser son évaluation interne en EHPAD – SSIAD - SAAD</option>
-                                            <option value="training_7">Devenir référent qualité / chargé de mission qualité en établissement sanitaire ou médico-social</option>
-                                        </optgroup>
-                                        <optgroup label="Renseignement sur une formation dans le domaine 'Prestations hôtelières':">
-                                            <option value="training_1">L’hygiène des locaux en EHPAD</option>
-                                            <option value="training_2">La fonction linge en EHPAD</option>
-                                            <option value="training_3">Construire son Plan de Maîtrise Sanitaire en EHPAD (restauration)</option>
-                                            <option value="training_4">Mettre en œuvre son Plan de Maîtrise Sanitaire en EHPAD (restauration)</option>
-                                        </optgroup>
-                                        <optgroup label="Renseignement sur une formation dans le domaine 'Risques psycho-sociaux et qualité de vie au travail':">
-                                            <option value="training_1">Initiation aux risques psycho-sociaux (RPS) et à la promotion de la qualité de vie au travail</option>
-                                            <option value="training_2">Mener une démarche « qualité de vie au travail » en secteur médico-social</option>
-                                        </optgroup>
-                                        <optgroup label="Devis :">
-                                            <option value="devis_intra">Formation intra établissement</option>
-                                            <option value="devis_inter">Formation inter établissement</option>
-                                        </optgroup>
-                                        <optgroup label="Inscription :">
-                                            <option value="insc_training">Inscription à une formation</option>
-                                        </optgroup>
-                                    </select>
+                                    <label for="object">Confirmez votre adresse mail :</label>
+                                    <input required class="form-control" type="email" name="mailVerify" placeholder="Votre adresse mail" />
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="message">Votre message :</label>
-                                <textarea required class="form-control" name="message" id="message" rows="10" cols="80"></textarea>
-                            </div>
+                            <div class="row">
+                                    <div class="form-group col-12 col-sm">
+                                        <label for="from">Votre mot de passe :</label>
+                                        <input required class="form-control" type="password" name="password" placeholder="Votre mot de passe" />
+                                    </div>
+                                    <div class="form-group col-12 col-sm">
+                                        <label for="object">Répétez votre mot de passe :</label>
+                                        <input required class="form-control" type="password" name="passwordVerify" placeholder="Votre mot de passe" />
+                                    </div>
+                                </div>
                             <div class="text-center">
-                                <input class="btn btn-primary" type="submit" name="send" value="Envoyer" disabled />
+                                <input class="btn btn-primary" type="submit" name="send" value="Inscription" disabled />
                             </div>
                         </form>
                     </div>

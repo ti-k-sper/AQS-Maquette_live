@@ -37,28 +37,22 @@ a:focus {
   background-color: #ced4da;
 }
 
+.btn-primary {
+  color: white;
+  background-color: #33A7E3;
+  padding: 14px 19px;
+  border-radius: 30px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: white;
+  background-color: #73c1f6;
+}
+
 .section-home {
   margin-top: 135px;
-  padding-top: 65px;
-}
-
-/* MEDIA QUERIE .section-home-intro */
-@media (min-width: 767.98px) { 
-  .home-intro {
-    margin-top: 320px;
-  }
-}
-
-@media (min-width: 1023.98px) { 
-  .home-intro {
-    margin-top: 420px;
-  }
-}
-
-@media (min-width: 1439.98px) { 
-  .home-intro {
-    margin-top: 135px;
-  }
+  padding-top: 70px;
 }
 
 .section-home-title {
@@ -75,18 +69,6 @@ a:focus {
   font-weight: normal;
 }
 
-.btn-primary {
-  color: white;
-  background-color: #33A7E3;
-  padding: 14px 19px;
-  border-radius: 30px;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  color: white;
-  background-color: #73c1f6;
-}
 
 .link-return {
   margin-top: 10vh;
@@ -100,7 +82,11 @@ a:focus {
 }
 
 /* Header */
-header nav div ul li {
+header nav {
+  font-size: 1.3vw;
+}
+
+.navbar-brand {
   font-size: 1.3vw;
 }
 
@@ -113,8 +99,12 @@ header nav div ul li {
 
 /* MEDIA QUERIES HEADER*/
 @media (max-width: 767.98px) { 
-  header nav div ul li {
-    font-size: 1rem;
+  header nav {
+    font-size: 1em;
+  }
+
+  .navbar-brand {
+    font-size: 1em;
   }
 
   .navbar .dropdown-menu.login-form {
@@ -230,6 +220,7 @@ footer {
 }
 
 /* Home */
+
 #home {
   display: flex;
   flex-direction: column;
@@ -241,7 +232,7 @@ footer {
   margin-right: auto;
   margin-top: 20vh;
   margin-bottom: 5vh;
-  max-height: 65vh;
+  max-height: 40vh;
   max-width: 70vw;
 }
 
@@ -276,11 +267,22 @@ footer {
   margin-top: 5px;
 }
 
-/* MEDIA QUERIES Home*/
-@media (min-width: 767.98px) {
-  .intro-next {
-    display: none;
-    margin-bottom: 0;
+/* MEDIA QUERIE .section-home .home-intro (gestion hauteur écran pour l'image d'acceuil)*/
+@media (min-width: 767.98px) { 
+  .home-intro {
+    margin-top: 320px;
+  }
+}
+
+@media (min-width: 1023.98px) { 
+  .home-intro {
+    margin-top: 420px;
+  }
+}
+
+@media (min-width: 1439.98px) { 
+  .home-intro {
+    margin-top: 135px;
   }
 }
 
@@ -567,7 +569,7 @@ figure.effect-honey:hover h4 i {
 }
 
 .btn-training {
-  margin-top: 4vh;
+  margin-top: 2vh;
   text-align: center;
 }
 
