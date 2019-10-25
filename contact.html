@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Allier Qualité Santé</title>
+        <title>Allier Qualité Santé - Contactez-nous</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lumen/bootstrap.min.css" rel="stylesheet" integrity="sha384-iqcNtN3rj6Y1HX/R0a3zu3ngmbdwEa9qQGHdkXwSRoiE+Gj71p0UNDSm99LcXiXV" crossorigin="anonymous">
@@ -14,7 +14,7 @@
     <body>
         <header class="menu">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="./index.html">Allier Qualité Santé - Domaine</a>
+                <a class="navbar-brand" href="./index.html">Allier Qualité Santé</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,49 +41,71 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="./page-domaine-liste-type.html">Démarche qualité-risque</a>
                                 <a class="dropdown-item" href="./page-domaine-liste-type.html">Prestations hôtelières</a>
-                                <a class="dropdown-item" href="./page-domaine-liste-type.html">Risques psycho-sociaux,<br />Qualitéde vie au travail</a>
+                                <a class="dropdown-item" href="./page-domaine-liste-type.html">Risques psycho-sociaux,<br />Qualité de vie au travail</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <section class="section-inter-lists">
+        <section class="section-home">
             <div class="container">
                 <div class="row">
-                    <h2 class="col-12 inter-lists-title">Démarche qualité-risque</h2>
-                </div>
-                <div>
-                    <ul class="col-12">
-                        <li class="inter-lists-title-training">
-                            <a href="./page-formation-type.html">S’initier à la démarche qualité en établissement médico-social (EHPAD – SSIAD – SAAD)</a>
-                        </li>
-                        <li class="inter-lists-title-training">
-                            <a href="./page-formation-type.html">Méthodologie des évaluations des pratiques professionnelles (EPP) en EHPAD</a>
-                        </li>
-                        <li class="inter-lists-title-training">
-                            <a href="./page-formation-type.html">La gestion documentaire en établissement médico-social</a>
-                        </li>
-                        <li class="inter-lists-title-training">
-                            <a href="./page-formation-type.html">Les indicateurs qualité en secteur médico-social (EHPAD – SSIAD)</a>
-                        </li>
-                        <li class="inter-lists-title-training">
-                            <a href="./page-formation-type.html">La gestion des risques en établissement médico-social : évaluation a priori – a posteriori</a>
-                        </li>
-                        <li class="inter-lists-title-training">
-                            <a href="./page-formation-type.html">Réaliser son évaluation interne en EHPAD – SSIAD - SAAD</a>
-                        </li>
-                        <li class="inter-lists-title-training">
-                            <a href="./page-formation-type.html">Devenir référent qualité / chargé de mission qualité en établissement sanitaire ou médico-social</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 link-return">
-                    <a href="./index.html#interventions" class=""><= Retour domaine d'intervention</a>
+                    <div class="col-12">
+                        <h1 class="section-home-title mb-5">Contactez-nous</h1>
+                        <form id='contactForm' method="post" action="" class="container">
+                            <div class="row">
+                                <div class="form-group col-12 col-sm">
+                                    <label for="from">Votre adresse mail :</label>
+                                    <input required class="form-control" type="text" name="from" id="from"
+                                        placeholder="Votre adresse mail" />
+                                </div>
+                                <div class="form-group col-12 col-sm">
+                                    <label for="object">Objet de votre demande :</label>
+                                    <select required class="form-control" name="object" id="object">
+                                        <option value="">-- Choississez dans la liste : --</option>
+                                        <optgroup label="Renseignement sur une formation dans le domaine 'Démarche qualité-risque':">
+                                            <option value="training_1">S’initier à la démarche qualité en établissement médico-social (EHPAD – SSIAD – SAAD)</option>
+                                            <option value="training_2">Méthodologie des évaluations des pratiques professionnelles (EPP) en EHPAD</option>
+                                            <option value="training_3">La gestion documentaire en établissement médico-social</option>
+                                            <option value="training_4">Les indicateurs qualité en secteur médico-social (EHPAD – SSIAD)</option>
+                                            <option value="training_5">La gestion des risques en établissement médico-social : évaluation a priori – a posteriori</option>
+                                            <option value="training_6">Réaliser son évaluation interne en EHPAD – SSIAD - SAAD</option>
+                                            <option value="training_7">Devenir référent qualité / chargé de mission qualité en établissement sanitaire ou médico-social</option>
+                                        </optgroup>
+                                        <optgroup label="Renseignement sur une formation dans le domaine 'Prestations hôtelières':">
+                                            <option value="training_1">L’hygiène des locaux en EHPAD</option>
+                                            <option value="training_2">La fonction linge en EHPAD</option>
+                                            <option value="training_3">Construire son Plan de Maîtrise Sanitaire en EHPAD (restauration)</option>
+                                            <option value="training_4">Mettre en œuvre son Plan de Maîtrise Sanitaire en EHPAD (restauration)</option>
+                                        </optgroup>
+                                        <optgroup label="Renseignement sur une formation dans le domaine 'Risques psycho-sociaux et qualité de vie au travail':">
+                                            <option value="training_1">Initiation aux risques psycho-sociaux (RPS) et à la promotion de la qualité de vie au travail</option>
+                                            <option value="training_2">Mener une démarche « qualité de vie au travail » en secteur médico-social</option>
+                                        </optgroup>
+                                        <optgroup label="Devis :">
+                                            <option value="devis_intra">Formation intra établissement</option>
+                                            <option value="devis_inter">Formation inter établissement</option>
+                                        </optgroup>
+                                        <optgroup label="Inscription :">
+                                                <option value="insc_training">Inscription à une formation</option>
+                                            </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Votre message :</label>
+                                <textarea required class="form-control" name="message" id="message" rows="10" cols="80"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <input class="btn btn-primary" type="submit" name="send" value="Envoyer" disabled />
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -105,7 +127,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 footer-center">
                         <div>
-                            <p>Sites Officiel :</p>
+                            <p>Sites Officiels :</p>
                             <div class="row">
                                 <div class="col-6 mb-3 logoOfficial">
                                     <a href="https://www.anap.fr/accueil/">
@@ -155,7 +177,7 @@
                 </div>
             </div>
         </footer>
-    
+
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script type="text/javascript" src="./assets/js/script.js"></script>
