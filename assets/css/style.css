@@ -314,14 +314,14 @@ footer {
   cursor: pointer;
 }
 
-.moins, 
+.less, 
 .hidetext,
-.more-text:focus .plus{
+.more-text:focus .more{
   display: none;
 }
 
 .more-text:focus +.hidetext,
-.more-text:focus .moins{
+.more-text:focus .less{
   display: block;
 }
 
