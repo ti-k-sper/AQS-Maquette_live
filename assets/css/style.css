@@ -286,6 +286,8 @@ footer {
   }
 }
 
+/* Home */
+
 /* Home Introduction */
 
 .slogan {
@@ -306,6 +308,26 @@ footer {
 }
 
 /* Home Services */
+
+.more-text {
+  bottom: 1vh;
+  cursor: pointer;
+}
+
+.moins, 
+.hidetext,
+.more-text:focus .plus{
+  display: none;
+}
+
+.more-text:focus +.hidetext,
+.more-text:focus .moins{
+  display: block;
+}
+
+.more-text:focus {
+  pointer-events: none;
+}
 
 .services-datadock{
   display: flex;
