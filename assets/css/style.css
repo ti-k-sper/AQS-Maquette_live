@@ -267,7 +267,7 @@ footer {
   margin-top: 5px;
 }
 
-/* MEDIA QUERIE .section-home .home-intro (gestion hauteur écran pour l'image d'acceuil)*/
+/* MEDIA QUERIE .section-home .home-intro (gestion hauteur écran pour l'image d'accueil)*/
 @media (min-width: 767.98px) { 
   .home-intro {
     margin-top: 320px;
